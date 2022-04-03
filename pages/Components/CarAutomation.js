@@ -7,11 +7,11 @@ function CarAutomation() {
     return (
         <div>
             <h2>CHOOSE YOUR CAR MODEL</h2>
-            <div className='grid grid-cols-3 gap-4 rounded-md bg-gray-200 p-5'>
-                <div className='col-span-2'>
+            <div className='grid grid-cols-6 gap-4 rounded-md bg-gray-200 p-5'>
+                <div className='col-span-4'>
                     <h2>Drag & Drop you picture</h2>
                 </div>
-                <div>
+                <div className='col-span-2'>
                     <form onSubmit={handleSubmit(handleRegistration)}>
                         <div>
                             <label>Chassis Number*</label>
