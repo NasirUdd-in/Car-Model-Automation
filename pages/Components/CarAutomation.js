@@ -1,5 +1,6 @@
-import React from 'react'
-import { useForm } from 'react-hook-form'
+import React from 'react';
+import { useForm } from 'react-hook-form';
+
 
 function CarAutomation() {
     const { register, handleSubmit } = useForm();
@@ -7,11 +8,12 @@ function CarAutomation() {
     return (
         <div>
             <h2>CHOOSE YOUR CAR MODEL</h2>
-            <div className='grid grid-cols-6 gap-4 rounded-md bg-gray-200 p-5 sm:grid-cols-1'>
-                <div className='col-span-4 sm:col-span-1'>
-                    <h2>Drag & Drop you picture</h2>
-                </div>
+            <div className='container grid gap-6 mx-auto text-center lg:grid-cols-2 xl:grid-cols-5 '>
+                
                 <div className='col-span-2'>
+                  \\image should be there
+                </div>
+                <div className=' w-full px-6 py-16 rounded-md sm:px-12 md:px-16 xl:col-span-2 dark:bg-coolGray-900'>
                     <form onSubmit={handleSubmit(handleRegistration)}>
                         <div>
                             <label>Chassis Number*</label>
@@ -56,6 +58,8 @@ function CarAutomation() {
                         <button className='w-full bg-teal-400 text-white py-3.5 pr-5 my-2 pr-0 border-none rounded cursor-pointer'>Submit</button>
                     </form>
                 </div>
+               
+               
             </div>
         </div>
     )
