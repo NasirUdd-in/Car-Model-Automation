@@ -7,15 +7,15 @@ function CarAutomation() {
     return (
         <div>
             <h2>CHOOSE YOUR CAR MODEL</h2>
-            <div className='grid grid-cols-6 gap-4 rounded-md bg-gray-200 p-5'>
-                <div className='col-span-4'>
+            <div className='grid grid-cols-6 gap-4 rounded-md bg-gray-200 p-5 sm:grid-cols-1'>
+                <div className='col-span-4 sm:col-span-1'>
                     <h2>Drag & Drop you picture</h2>
                 </div>
                 <div className='col-span-2'>
                     <form onSubmit={handleSubmit(handleRegistration)}>
                         <div>
                             <label>Chassis Number*</label>
-                            <input className='w-full py-3 pr-5 my-2 my-0 inline-block border border-solid border-stone-500 rounded box-border'
+                            <input className='w-full py-3 pr-5 my-2 my-0 inline-block border border-solid border-stone-500 rounded box-border border'
                                 type="number" name='chassis_number' {...register('chassis_number')} placeholder="Enter Chassis Number"></input>
                         </div>
                         <div>
